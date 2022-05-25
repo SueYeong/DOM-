@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
 
+    <style>
+
+        /* .box_3[data-plzza="plzzaHut"]{
+            font-size: 50px;
+        } */
+
+    </style>
+
 </head>
 <body>
 
     <div class="box">1</div>
     <div class="box">2</div>
     <div class="box">3</div>
+    <!-- <div class="box box_3" data-plzza="plzzaHut">3</div> -->
 
     <script>
 
@@ -29,11 +38,20 @@
         // const boxEl_2 = document.querySelector('.box:nth-child(2)')
         // console.log(boxEl_2)
 
-        const boxAll = document.querySelectorAll('.box')
-        =>여러 클래스를 선택해올수있음
-        =>단, 선택할때 배열 형태로 반환 시켜줌
-        =>원하는 선택자를 선택하고싶을땐 배열 형식으로 선택해주면됨
-        console.log(boxAll[2]);
+        // const boxAll = document.querySelectorAll('.box')
+        // =>여러 클래스를 선택해올수있음
+        // =>단, 선택할때 배열 형태로 반환 시켜줌
+        // =>원하는 선택자를 선택하고싶을땐 배열 형식으로 선택해주면됨
+        // console.log(boxAll[2]);
+
+        const boxEl_1 = document.querySelector('.box:nth-child(1)');
+        // console.log(boxEl_1);
+
+        boxEl_1.setAttribute('data-chicken', 'BBQ');
+
+        boxEl_1.getAttribute('data-chicken')
+        const getaAttr = boxEl_1.getAttribute('data-chicken')
+        console.log(getaAttr)
         
 
 
