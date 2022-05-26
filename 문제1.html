@@ -15,19 +15,30 @@
 
     <script>
 
-        const boxEl_1 = document.querySelector('.box:nth-child(1)')
-        boxEl_1.setAttribute('data-id', 1)
+        // const boxEl_1 = document.querySelector('.box:nth-child(1)')
+        // boxEl_1.setAttribute('data-id', 1)
 
-        const boxEl_2 = document.querySelector('.box:nth-child(2)')
-        boxEl_2.setAttribute('data-id', 2)
+        // const boxEl_2 = document.querySelector('.box:nth-child(2)')
+        // boxEl_2.setAttribute('data-id', 2)
 
-        const boxEl_3 = document.querySelector('.box:nth-child(3)')
-        boxEl_3.setAttribute('data-id', 3)
+        // const boxEl_3 = document.querySelector('.box:nth-child(3)')
+        // boxEl_3.setAttribute('data-id', 3)
 
-        const boxEl_4 = document.querySelector('.box:nth-child(4)')
-        boxEl_4.setAttribute('data-id', 4)
+        // const boxEl_4 = document.querySelector('.box:nth-child(4)')
+        // boxEl_4.setAttribute('data-id', 4)
 
+        // const boxAll = document.querySelectorAll('.box')
         
+        // boxAll[0].setAttribute('data-id', 1)
+        // boxAll[1].setAttribute('data-id', 2)
+        // boxAll[2].setAttribute('data-id', 3)
+        // boxAll[3].setAttribute('data-id', 4)
+
+        const boxAll = document.querySelectorAll('.box')
+
+        for(let i = 0; i < boxAll.length; i++){
+            boxAll[i].setAttribute('data-id', i)
+        }
 
     </script>
 
